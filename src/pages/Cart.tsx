@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom'
-import { Minus, Plus, Trash2, ShoppingBag, ArrowRight, Truck, Phone } from 'lucide-react'
+import { Minus, Plus, Trash2, ShoppingBag, ArrowRight, Truck, Phone, CheckCircle } from 'lucide-react'
 import { useCart } from '../context/CartContext'
 import { useAdmin } from '../context/AdminContext'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'

@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect, useRef } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { SlidersHorizontal, Star, ChevronDown, X, ShoppingBag, Search, Check } from 'lucide-react'
+import { SlidersHorizontal, Star, ChevronDown, X, ShoppingBag, Search, Check, RotateCcw } from 'lucide-react'
 import { useAdmin } from '../context/AdminContext'
 import { useCart } from '../context/CartContext'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'

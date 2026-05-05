@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { Star, Minus, Plus, Truck, RotateCcw, ShieldCheck, Check, ChevronRight, X, ZoomIn, AlertCircle } from 'lucide-react'
+import { Star, Minus, Plus, Truck, RotateCcw, ShieldCheck, Check, ChevronRight, X, ZoomIn, AlertCircle, ArrowRight } from 'lucide-react'
 import { useAdmin } from '../context/AdminContext'
 import { useCart } from '../context/CartContext'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'
 
 export default function ProductDetail() {
   const { id } = useParams<{ id: string }>()
-  const { products, formatPrice, settings } = useAdmin()
+  const { products, formatPrice } = useAdmin()
   const { addItem } = useCart()
   const [quantity, setQuantity] = useState(1)
   const [added, setAdded] = useState(false)

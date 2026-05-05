@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
-import { Search, ShoppingBag, Menu, X, Minus, Plus, Trash2, Phone } from 'lucide-react'
+import { Search, ShoppingBag, Menu, X, Minus, Plus, Trash2, ShieldCheck } from 'lucide-react'
 import { useCart } from '../context/CartContext'
 import { useAdmin } from '../context/AdminContext'
 

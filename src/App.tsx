@@ -28,7 +28,6 @@ import AdminOrders from './pages/AdminOrders'
 import AdminMessages from './pages/AdminMessages'
 import AdminSettings from './pages/AdminSettings'
 import ProtectedRoute from './components/ProtectedRoute'
-import AdminLayout from './components/AdminLayout'
 
 function MainLayout() {
   const location = useLocation()

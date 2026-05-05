@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { CreditCard, Banknote, ArrowRight, Check, Truck, RotateCcw, ShieldCheck, Phone } from 'lucide-react'
+import { CreditCard, Banknote, ArrowRight, Check, Truck, RotateCcw, ShieldCheck, Phone, ShoppingBag } from 'lucide-react'
 import { useCart } from '../context/CartContext'
 import { useAdmin } from '../context/AdminContext'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'
@@ -8,7 +8,7 @@ import { useDocumentTitle } from '../hooks/useDocumentTitle'
 export default function Checkout() {
   useDocumentTitle('Finalization Protocol')
   const { items, totalPrice, clearCart } = useCart()
-  const { settings, saveOrder } = useAdmin()
+  const { settings, saveOrder, formatPrice } = useAdmin()
   const navigate = useNavigate()
   const [paymentMethod, setPaymentMethod] = useState<'cod' | 'card'>('cod')
   const [step, setStep] = useState(1)
